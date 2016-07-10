@@ -3,6 +3,8 @@
 <head>
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src='calculator.js'></script>
+	<script type="text/javascript" src='validator.js'></script>
 </head>
 <body>
 <section id="navigation_bar">
@@ -17,34 +19,33 @@
 	<img src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
 	</ul> </section>
 <form>
-	<textarea class="view" placeholder="3.141592653"></textarea>
-	<div class="row1"><button class="AC">AC</button>
-		<button class="sign">%</button>
-		<button class="sign">/</button>	
-		<button class="delete"><-</button></div>
-		<div class="row2">
-			<button class="number">7</button>
-	<button class="number">8</button>
-	<button class="number">9</button>
-	<button class="sign">X</button>
+	<textarea disabled 	rows="2" maxlength="10" class="view"></textarea>
+	<div class="row1">
+		<button class='ac'>AC</button>
+		<button class="percent">%</button>
+		<button class="sign" id="division">/</button>	
+		<button class='del'>DEL</button></div>
+	<div class="row2">
+		<button class="number">7</button>
+		<button class="number">8</button>
+		<button class="number">9</button>
+		<button class="sign" id="multiply">*</button>
 		</div>
-
-
-	<div calss="row3"><button class="number">4</button>
-		<button class="number">5</button>
-		<button class="number">6</button>
-			<button class="sign">-</button></div>
-
-	<div class="row4"><button class="number">1</button>
-		<button class="number">2</button>
-		<button class="number">3</button>
-		<button class="sign">+</button></div>
-
-
-	<div class="row5"><button id="zero" class="number">0</button>
-		<button class="dot">.</button>
-		<button class="sign">( )</button>
-		<button class="equal">=</button></div>
+	<div calss="row3">
+		<button class="number" id="4">4</button>
+		<button class="number" id="5">5</button>
+		<button class="number" id="6">6</button>
+		<button class="sign" id="minus">-</button></div>
+	<div class="row4">
+		<button class="number" id="1">1</button>
+		<button class="number" id="2">2</button>
+		<button class="number" id="3">3</button>
+		<button class="sign" id="plus">+</button></div>
+	<div class="row5">
+		<button class="number" id="0">0</button>
+		<button class="dot" >.</button>
+		<button id="negative">&#177</button>
+		<button class="evaluate">=</button></div>
 	
 </form>
 </body>
