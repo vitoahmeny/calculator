@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-	var numbers = document.getElementsByTagName('*');
+	var numbers = document.getElementsByClassName('number');
+	var signs = document.getElementsByClassName('sign');
 	var view = document.querySelector('.view');
 	var dot = document.querySelector('.dot');
 	var ac = document.querySelector('.ac');
@@ -16,9 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 
 	for (var i = 0; i < numbers.length; i++) {
-		if (numbers[i].getAttribute('class') == 'number' || numbers[i].getAttribute('class') == 'sign')  {
 		numbers[i].addEventListener('click', func);
-		}
+	}
+
+	for (var i = 0; i < signs.length; i++) {
+		signs[i].addEventListener('click', func);
 	}
 
 	dot.addEventListener('click', function (event) {
