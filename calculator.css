@@ -2,7 +2,7 @@ body {
 	background: rgb(41, 204, 156);
 }
 form {
-	width: 360px;
+	width: 320px;
 	margin:auto;
 	margin-top: 7%;
 	box-shadow: 1px 1px 5px #666666;
@@ -21,9 +21,9 @@ textarea {
 
 
 button {
-	width: 70px;
+	width: 60px;
 	border-radius: 50%;
-	height: 70px;
+	height: 60px;
 	background-color: white;
 	border: 1px solid #D3D3D3;
 	margin: 0 0 10px 10px;
@@ -110,8 +110,7 @@ button.number:hover {
 
 @media (max-width: 320px) {
 	form {
-		width: 80%;
-		padding: 10px 0 15px 0;
+		width: 85%;
 
 	}
 
